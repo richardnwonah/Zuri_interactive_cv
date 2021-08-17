@@ -27,12 +27,14 @@
     <title>Richard Nwonah Cv</title>
 </head>
 <body>
+    <div id="header">
     <h1>Richard Nwonah</h1>
     <h4>Address: 9 Chief Opogah Street, off Isheri Lagos state, Nigeria. </h4>
     <h4>E-mail: nwonahr@gmail.com</h4>
-   <hr/>
+</div>
+  
 
-<div id="float-child">
+<div id="main">
  
    <h3>Professional Summary</h3>
    <p>I am a php Laravel and c# dotNet backend developer with a very high interest for technology</p>
@@ -42,19 +44,24 @@
    <p>Web developer -Erbaver</p>
    <p>Duration: Three years</p>
 
+   
+   <p>Web developer -Ovid inquires</p>
+   <p>Duration: one year</p>
+
    <p>Dotnet Vvm</p>
     <p>Duration: One year</p>
     <p>Task: Ambassador</p>
+
 </div>
 
    </div>
 
-   <div id="float-child">
-       
+   <div id="footer">
+       <h2>Contact Form</h2>
    <form action="" method="post"><br><br>
-    <input name="name" type="text"/><br><br>
-    <input name="email" type="text"/><br><br>
-    <textarea name="message"></textarea><br><br>
+    <input name="name" placeholder="Company/Individual Name" type="text" required/><br><br>
+    <input name="email"  placeholder="E-mail" type="text" email/><br><br>
+    <textarea  placeholder="Messages" name="message" required></textarea><br><br>
     <input name="submit" value="submit" type="submit"/>
 
    </form>
