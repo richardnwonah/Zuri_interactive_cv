@@ -17,61 +17,243 @@
         echo "<div id='messageBox'>Message submission successfull</div>";
     }
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Richard Nwonah Cv</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Richard Nwonah's Demo cv</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
+
 <body>
+    <div class="container-fluid overcover">
+        <div class="container profile-box">
+            <div class="row">
+                <div class="col-md-4 left-co">
+                    <div class="left-side">
+                        <div class="profile-info">
+                            <img src="assets/images/profile.jpg" alt="">
+                            <h3>Richard Nwonah</h3>
+                            <span>Software Developer</span>
+                        </div>
+                        <h4 class="ltitle">Contact</h4>
+                        <div class="contact-box pb0">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="detail">
+                                +234 816 272 3338 <br>
+                                +234 803 747 8545 
+                            </div>
+                        </div>
+                        <div class="contact-box pb0">
+                            <div class="icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="detail">
+                                nwonahr@gmail.com <br>
+                                www.richardnwonah.heroku.com
+                            </div>
+                        </div>
+                        <div class="contact-box">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail">
+                                First Floor,Vincent Plaza, Toranto, Canada
+                            </div>
+                        </div>
+                        <h4 class="ltitle">Contact</h4>
+                        <ul class="row social-link no-margin">
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-google-plus-g"></i></li>
+                            <li><i class="fab fa-linkedin-in"></i></li>
+                            <li><i class="fab fa-github"></i></li>
+                        </ul>
+                        <h4 class="ltitle">Referencess</h4>
 
-    <div id="header">
-    <h1>Richard Nwonah</h1>
-    <h4>Address: 9 Chief Opogah Street, off Isheri Lagos state, Nigeria. </h4>
-    <h4>E-mail: nwonahr@gmail.com</h4>
-</div>
-  
+                        <div class="refer-cov">
+                            <b>Jonney Smith</b>
+                            <p>CEO Casinocarol</p>
+                            <span>p +00 890 1232 8767</span>
+                        </div>
+                        <div class="refer-cov">
+                            <b>Jonney Smith</b>
+                            <p>System Administrator</p>
+                            <span>p +00 890 1232 8767</span>
+                        </div>
+                        <h4 class="ltitle">Hobbies</h4>
+                        <ul class="hoby row no-margin">
+                            <li><i class="fas fa-pencil-alt"></i> <br> Writing</li>
+                            <li><i class="fas fa-bicycle"></i> <br> Cycling</li>
+                            <li><i class="fas fa-futbol"></i> <br> Football</li>
+                            <li><i class="fas fa-film"></i><br> Movies</li>
+                            <li><i class="fas fa-plane-departure"></i> <br>Travel</li>
+                            <li><i class="fas fa-gamepad"></i> <br> Games</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8 rt-div">
+                    <div class="rit-cover">
+                        <div class="hotkey">
+                            <h1 class="">Richard Nwonah </h1>
+                            <small>Software Developer</small>
+                        </div>
+                        <h2 class="rit-titl"><i class="far fa-user"></i> Profile</h2>
+                        <div class="about">
+                            <p>I am a WEB / SOFTWARE Developer ( PHP, MySQL, JavaScript, Angular JS, JQuery, Bootstrap, CSS, SQL Server, HTML, 
+Java, C, C++, Python) with experience of working on a variety of web and software development projects. I work on 
+all aspects of the development life cycle, applying my knowledge of OO PHP and MVC principles. Excellent 
+communication skills and able to work alongside support. My past work includes building user-focused, dynamic, 
+innovative and functional WEB/MOBILE AND WINDOWS softwares using responsive / adaptive / mobile-first design 
+and development</p>
+                            <div class="btn-ro row no-margin">
+                                <ul class="btn-link">
+                                    <li>
+                                        <a href=""><i class="fas fa-paper-plane"></i> Contact Me</a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fas fa-cloud-download-alt"></i> Download Resume</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-<div id="main">
- <div class="float-container">
+                        <h2 class="rit-titl"><i class="fas fa-briefcase"></i> Work Experiance</h2>
+                        <div class="work-exp">
+                            <h6>Junior Software Developer <span>2008-2011</span></h6>
+                            <i>Microsoft / United States</i>
+                            <ul>
+                                <li><i class="far fa-hand-point-right"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                <li><i class="far fa-hand-point-right"></i> Sorem dolor sit amet, consectetur. </li>
+                                <li><i class="far fa-hand-point-right"></i> Porem ipsum sit amet, consectetur adipiscing </li>
+                            </ul>
+                        </div>
+                        <div class="work-exp">
+                            <h6>Junior Software Developer <span>2008-2011</span></h6>
+                            <i>Microsoft / United States</i>
+                            <ul>
+                                <li><i class="far fa-hand-point-right"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                
+                                <li><i class="far fa-hand-point-right"></i> Sed cursus augue risus, ac semper est consectetur vitae </li>
+                            </ul>
+                        </div>
+                        <div class="work-exp">
+                            <h6>Junior Software Developer <span>2008-2011</span></h6>
+                            <i>Microsoft / United States</i>
+                            <ul>
+                                <li><i class="far fa-hand-point-right"></i> Praesent consequat metus sit amet rhoncus luctus.
 
-  <div class="float-child">
-<center>
-   <h3>Professional Summary</h3>
-   <p>I am a php Laravel and c# dotNet backend developer with a very high interest for technology<./p>
-   </div>
-  
-  <div class="float-child">
+                                </li>
+                                <li><i class="far fa-hand-point-right"></i> Lorem ipsum dolor sit amet, consectetur. </li>
+                                
+                            </ul>
+                        </div>
 
-   <h3>Work history</h3>
-   <p>Web developer -Erbaver</p>
-   <p>Duration: Three years</p>
+                        <h2 class="rit-titl"><i class="fas fa-graduation-cap"></i> Education</h2>
+                        <div class="education">
+                            <ul class="row no-margin">
+                                <li class="col-md-6"><span>2013-2015</span> <br>
+                                    Master Degree - Cambridg University</li>
+                                <li class="col-md-6"><span>2013-2015</span> <br>
+                                    Master Degree - Cambridg University</li>
+                                <li class="col-md-6"><span>2013-2015</span> <br>
+                                    Master Degree - Cambridg University</li>
+                                <li class="col-md-6"><span>2013-2015</span> <br>
+                                    Master Degree - Cambridg University</li>
+                            </ul>
+                        </div>
 
-   
-   <p>Web developer -Ovid inquires</p>
-   <p>Duration: one year</p>
+                        <h2 class="rit-titl"><i class="fas fa-users-cog"></i> Skills</h2>
+                        <div class="profess-cover row no-margin">
+                            <div class="col-md-6">
+                                <div class=" prog-row row">
+                                    <div class="col-sm-6">
+                                        Photoshop
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row prog-row">
+                                    <div class="col-sm-6">
+                                        PHP
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-   <p>Dotnet Vvm</p>
-    <p>Duration: One year</p>
-    <p>Task: Ambassador</p>
-</center>
+                            <div class="col-md-6">
+                                <div class="row prog-row">
+                                    <div class="col-sm-6">
+                                        Web Design
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row prog-row">
+                                    <div class="col-sm-6">
+                                        Web Development
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                    <div id="form">
+                                      <h2 id="formText">Contact Form</h2>
+                                              <form action="" method="post"><br><br>
+                                                <input name="name" placeholder="Company/Individual Name" type="text" required/><br><br>
+                                                    <input name="email"  placeholder="E-mail" type="text" email/><br><br>
+                                                <textarea  placeholder="Messages" name="message" required></textarea><br><br>
+                                                <input name="submit" value="submit" type="submit"/>
+                                            </form>
 
-</div>
-</div>
-   </div>
-<center>
-   <div id="form">
-       <h2 id="formText">Contact Form</h2>
-   <form action="" method="post"><br><br>
-    <input name="name" placeholder="Company/Individual Name" type="text" required/><br><br>
-    <input name="email"  placeholder="E-mail" type="text" email/><br><br>
-    <textarea  placeholder="Messages" name="message" required></textarea><br><br>
-    <input name="submit" value="submit" type="submit"/>
-   </form>
-</center>
-</div>
+                                        
+                                
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+
+
+
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
 </html>
