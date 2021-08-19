@@ -24,7 +24,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Richard Nwonah's Demo cv</title>
-
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
     <link rel="shortcut icon" href="assets/images/fav.jpg">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
@@ -98,6 +98,8 @@
                             <li><i class="fas fa-plane-departure"></i> <br>Travel</li>
                             <li><i class="fas fa-gamepad"></i> <br> Games</li>
                         </ul>
+
+                        <div style="height: 430px;"></div>
                     </div>
                 </div>
                 <div class="col-md-8 rt-div">
@@ -160,14 +162,11 @@ and development</p>
                         <h2 class="rit-titl"><i class="fas fa-graduation-cap"></i> Education</h2>
                         <div class="education">
                             <ul class="row no-margin">
-                                <li class="col-md-6"><span>2013-2015</span> <br>
-                                    Master Degree - Cambridg University</li>
-                                <li class="col-md-6"><span>2013-2015</span> <br>
-                                    Master Degree - Cambridg University</li>
-                                <li class="col-md-6"><span>2013-2015</span> <br>
-                                    Master Degree - Cambridg University</li>
-                                <li class="col-md-6"><span>2013-2015</span> <br>
-                                    Master Degree - Cambridg University</li>
+                                <li class="col-md-6"><span>2018-2019</span> <br>
+                                    A Level Certificate - Wellspring University</li>
+                                <li class="col-md-6"><span>2019-2021</span> <br>
+                                    In View B.S.C. - Wellspring University</li>
+                               
                             </ul>
                         </div>
 
@@ -176,7 +175,7 @@ and development</p>
                             <div class="col-md-6">
                                 <div class=" prog-row row">
                                     <div class="col-sm-6">
-                                        Photoshop
+                                        DotNet & C#
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="progress">
@@ -188,7 +187,7 @@ and development</p>
                             <div class="col-md-6">
                                 <div class="row prog-row">
                                     <div class="col-sm-6">
-                                        PHP
+                                        Laravel & PHP
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="progress">
@@ -213,7 +212,7 @@ and development</p>
                             <div class="col-md-6">
                                 <div class="row prog-row">
                                     <div class="col-sm-6">
-                                        Web Development
+                                        Dart & Flutter
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="progress">
@@ -221,25 +220,18 @@ and development</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                                    <div id="form">
-                                      <h2 id="formText">Contact Form</h2>
+                            </div> 
+                           </div>
+                                    <div>
+                                    <h2 class="rit-titl"><i class="fas fa-users-cog"></i> Contact Me</h2>
                                               <form action="" method="post"><br><br>
-                                                <input name="name" placeholder="Company/Individual Name" type="text" required/><br><br>
-                                                    <input name="email"  placeholder="E-mail" type="text" email/><br><br>
-                                                <textarea  placeholder="Messages" name="message" required></textarea><br><br>
-                                                <input name="submit" value="submit" type="submit"/>
-                                            </form>
-
-                                        
+                                                <input name="name"  class="form-control m-0" placeholder="Company/Individual Name" type="text" required/><br><br>
+                                                    <input name="email"   class="form-control m-0" placeholder="E-mail" type="text" email/><br><br>
+                                                <textarea  placeholder="Messages"  class="form-control m-0" name="message" required></textarea><br><br>
+                                                <input name="submit" value="submit" type="submit" class="btn btn-secondary btn-lg btn-block"/>
+                                             </form>                                       
                                 
-                            </div>
-
-
-
-
-
-
+                        
                         </div>
                     </div>
                 </div>
