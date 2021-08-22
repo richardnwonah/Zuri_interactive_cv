@@ -1,4 +1,3 @@
-
 <?php
 
     require "includes/connection.inc.php";
@@ -7,245 +6,455 @@
     {
         $name = $_POST["name"];
         $email = $_POST["email"];
+        $subject = $_POST["subject"];
         $message = $_POST["message"];
 
         
-    $sql = "INSERT INTO contact(name, email, message) VALUES ('$name', '$email', '$message')";
+    $sql = "INSERT INTO contact(name, subject, email, message) VALUES ('$name', '$subject', '$email', '$message')";
 
     $conn->query($sql);
 
         echo "<div id='messageBox'>Message submission successfull</div>";
     }
 ?>
-<!doctype html>
+
+<!DOCTYPE html>
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
 <html lang="en">
-
+    
+<!-- Mirrored from demo.deviserweb.com/cv/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Aug 2021 08:07:05 GMT -->
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Richard Nwonah's Demo cv</title>
-    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/images/fav.jpg">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-</head>
+        <meta charset="utf-8">
+        
+        <!-- TITLE OF SITE-->
+        <title> Richard Nwonah </title>
+        
+        <!-- META TAG -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="CV, Portfolio, Resume">
+        <meta name="author" content="Md. Siful Islam, Desiver Web">
+        
+        <!-- FAVICON -->
+        <link rel="icon" href="assets/images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.html">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
 
-<body>
-    <div class="container-fluid overcover">
-        <div class="container profile-box">
+        <!-- ========================================
+                Stylesheets
+        ==========================================--> 
+        
+        <!-- MATERIALIZE CORE CSS -->
+        <link href="assets/css/materialize.min.css" rel="stylesheet">
+        
+
+        <!-- ADDITIONAL CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        
+
+        <!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        
+
+        <!--FONTAWESOME CSS-->
+        <link href="assets/icons/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+        
+
+        <!-- CUSTOM STYLE -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        
+
+        <!-- RESPONSIVE CSS-->
+        <link href="assets/css/responsive.css" rel="stylesheet">
+
+        <!-- COLORS -->        
+        <link rel="alternate stylesheet" href="assets/css/colors/red.css" title="red">
+        <link rel="alternate stylesheet" href="assets/css/colors/purple.css" title="purple">
+        <link rel="alternate stylesheet" href="assets/css/colors/orange.css" title="orange">
+        <link rel="alternate stylesheet" href="assets/css/colors/green.css" title="green">
+        <link rel="stylesheet" href="assets/css/colors/lime.css" title="lime">
+
+        
+        <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+        <link rel="stylesheet" href="assets/css/demo.css">
+        
+        <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif] -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body>
+        <!-- Start Container-->
+        <div class="container">
+            <!-- row -->
             <div class="row">
-                <div class="col-md-4 left-co">
-                    <div class="left-side">
-                        <div class="profile-info">
-                            <img src="assets/images/profile.jpg" alt="">
-                            <h3>Richard Nwonah</h3>
-                            <span>Software Developer</span>
+            <!-- =========================================
+                           SIDEBAR   
+            ==========================================-->
+                <!-- Start Sidebar -->
+                <aside class="col l4 m12 s12 sidebar z-depth-1" id="sidebar">
+                    <!--  Sidebar row -->
+                    <div class="row">                      
+                        <!--  top section   -->
+                        <div class="heading">                            
+                            <!-- ====================
+                                      IMAGE   
+                            ==========================-->
+                            <div class="feature-img">
+                                <a href="index-2.html"><img src="assets/images/profile-img.jpg" class="responsive-img" alt=""></a> 
+                            </div>                            
+                            <!-- =========================================
+                                       NAVIGATION   
+                            ==========================================-->
+                            <div class=" nav-icon">
+                                <nav>
+                                    <div class="nav-wrapper">
+                                      <ul id="nav-mobile" class="side-nav">                                  
+                                        <li><a href="index-2.html">Resume</a></li>                                        
+                                        <li><a href="project.html">Projects</a></li>
+                                        <li><a href="cover-latter.html">Cover Latter</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                      </ul>
+                                      <a href="#" data-activates="nav-mobile" class="button-collapse  "><i class="mdi-navigation-menu"></i></a>
+                                    </div>
+                                </nav>
+                            </div>                            
+                            <!-- ========================================
+                                       NAME AND TAGLINE
+                            ==========================================-->
+                            <div class="title col s12 m12 l9 right  wow fadeIn" data-wow-delay="0.1s">   
+                                <h2>Richard Nwonah</h2> <!-- title name -->
+                                <span>Software Developer</span>  <!-- tagline -->
+                            </div>                         
                         </div>
-                        <h4 class="ltitle">Contact</h4>
-                        <div class="contact-box pb0">
-                            <div class="icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="detail">
-                                +234 816 272 3338 <br>
-                                +234 803 747 8545 
-                            </div>
+                         <!-- sidebar info -->
+                        <div class="col l12 m12 s12 sort-info sidebar-item">
+                            <div class="row">                               
+                                <div class="col m12 s12 l3 icon"> <!-- icon -->
+                                   <i class="fa fa-user"></i>
+                                </div>                                
+                                <div class="col m12 s12 l9 info wow fadeIn a1" data-wow-delay="0.1s" > <!-- text -->
+                                    <div class="section-item-details">
+                                        <p>I am a WEB / SOFTWARE Developer ( PHP, C#, Dart, SQL, JavaScript 
+                                        ) with experience of working on a variety of web and software development projects.</p>
+                                    </div>             
+                                </div>
+                            </div>         
                         </div>
-                        <div class="contact-box pb0">
-                            <div class="icon">
-                                <i class="fas fa-globe-americas"></i>
-                            </div>
-                            <div class="detail">
-                                nwonahr@gmail.com <br>
-                                www.richardnwonah.heroku.com
-                            </div>
+                        <!-- MOBILE NUMBER -->
+                        <div class="col l12 m12 s12  mobile sidebar-item">
+                            <div class="row">                                
+                                <div class="col m12 s12 l3 icon">
+                                    <i class="fa fa-phone"></i> <!-- icon -->
+                                </div>                                
+                                <div class="col m12 s12 l9 info wow fadeIn a2" data-wow-delay="0.2s" >
+                                    <div class="section-item-details">
+                                        <div class="personal">
+                                            <h4><a href="tel:+234-816-272-3338">+234-816-272-3338</a></h4> <!-- Number -->             
+                                            <span>mobile</span> 
+                                        </div>
+                                        <div class="work">
+                                            <h4><a href="tel:+234-816-272-3338">+234-816-272-3338</a></h4> <!-- Number -->
+                                            <span>work</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>             
                         </div>
-                        <div class="contact-box">
-                            <div class="icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="detail">
-                                First Floor,Vincent Plaza, Toranto, Canada
-                            </div>
+                        <!--  EMAIL -->
+                        <div class="col l12 m12 s12  email sidebar-item ">
+                            <div class="row">                                
+                                <div class="col m12 s12 l3 icon">
+                                    <i class="fa fa-envelope"></i> <!-- icon -->
+                                </div>                                
+                                <div class="col m12 s12 l9 info wow fadeIn a3" data-wow-delay="0.3s">
+                                    <div class="section-item-details">
+                                        <div class="personal">                                    
+                                            <h4><a href="mailto:someone@example.com">nwonahr@gmail.com</a></h4> <!-- Email -->
+                                            <span>personal</span> 
+                                        </div>
+                                        <div class="work">                                 
+                                            <h4><a href="mailto:someone@example.com">richardnwonah@outlook.com</a></h4> <!-- Email -->
+                                            <span>work</span> <br>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>          
                         </div>
-                        <h4 class="ltitle">Contact</h4>
-                        <ul class="row social-link no-margin">
-                            <li><i class="fab fa-facebook-f"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
-                            <li><i class="fab fa-google-plus-g"></i></li>
-                            <li><i class="fab fa-linkedin-in"></i></li>
-                            <li><i class="fab fa-github"></i></li>
-                        </ul>
-                        <h4 class="ltitle">Referencess</h4>
+                        <!-- ADDRESS  -->
+                        <div class="col l12 m12 s12  address sidebar-item ">
+                            <div class="row">                                
+                                <div class="col l3 m12  s12 icon">
+                                    <i class="fa fa-home"></i> <!-- icon -->
+                                </div>                                
+                                <div class="col m12 s12 l9 info wow fadeIn a4" data-wow-delay="0.4s">
+                                    <div class="section-item-details">
+                                        <div class="address-details"> <!-- address  -->
+                                            <h4>Lagos <span>Ijegun</span><br>
+                                            
+                                            <span>Chief Opogah Street</span></h4> 
+                                        </div>                         
+                                    </div>
+                                </div>
+                            </div>            
+                        </div>
+                        <!-- SKILLS -->
+                        <div class="col l12 m12 s12  skills sidebar-item" >
+                            <div class="row">
+                                <div class="col m12 l3 s12 icon">
+                                    <i class="fa fa-calendar-o"></i> <!-- icon -->
+                                </div>
+                                 <!-- Skills -->
+                                <div class="col m12 l9 s12 skill-line a5 wow fadeIn" data-wow-delay="0.5s">
+                                    <h3>Professional Skills </h3>
+                                    
+                                    <span>C# & Dotnet</span>                                    
+                                    <div class="progress">
+                                        <div class="determinate"> 80% </div>
+                                    </div>
+                                    
+                                    <span>PHP & Laravel</span>
+                                    <div class="progress">
+                                        <div class="determinate"> 95%</div>
+                                    </div>
+                                    
+                                    <span>Javescript & Jquery</span>
+                                    <div class="progress">
+                                        <div class="determinate">90%</div>
+                                    </div>
 
-                        <div class="refer-cov">
-                            <b>Jonney Smith</b>
-                            <p>CEO Casinocarol</p>
-                            <span>p +00 890 1232 8767</span>
-                        </div>
-                        <div class="refer-cov">
-                            <b>Jonney Smith</b>
-                            <p>System Administrator</p>
-                            <span>p +00 890 1232 8767</span>
-                        </div>
-                        <h4 class="ltitle">Hobbies</h4>
-                        <ul class="hoby row no-margin">
-                            <li><i class="fas fa-pencil-alt"></i> <br> Writing</li>
-                            <li><i class="fas fa-bicycle"></i> <br> Cycling</li>
-                            <li><i class="fas fa-futbol"></i> <br> Football</li>
-                            <li><i class="fas fa-film"></i><br> Movies</li>
-                            <li><i class="fas fa-plane-departure"></i> <br>Travel</li>
-                            <li><i class="fas fa-gamepad"></i> <br> Games</li>
-                        </ul>
+                                    <span>SQL</span>
+                                    <div class="progress">
+                                        <div class="determinate">85%</div>
+                                    </div>
 
-                        <div style="height: 430px;"></div>
-                    </div>
-                </div>
-                <div class="col-md-8 rt-div">
-                    <div class="rit-cover">
-                        <div class="hotkey">
-                            <h1 class="">Richard Nwonah </h1>
-                            <small>Software Developer</small>
-                        </div>
-                        <h2 class="rit-titl"><i class="far fa-user"></i> Profile</h2>
-                        <div class="about">
-                            <p>I am a WEB / SOFTWARE Developer ( PHP, MySQL, JavaScript, Angular JS, JQuery, Bootstrap, CSS, SQL Server, HTML, 
-Java, C, C++, Python) with experience of working on a variety of web and software development projects. I work on 
-all aspects of the development life cycle, applying my knowledge of OO PHP and MVC principles. Excellent 
-communication skills and able to work alongside support. My past work includes building user-focused, dynamic, 
-innovative and functional WEB/MOBILE AND WINDOWS softwares using responsive / adaptive / mobile-first design 
-and development</p>
-                            <div class="btn-ro row no-margin">
-                                <ul class="btn-link">
-                                    <li>
-                                        <a href=""><i class="fas fa-paper-plane"></i> Contact Me</a>
-                                    </li>
-                                    <li>
-                                        <a href=""><i class="fas fa-cloud-download-alt"></i> Download Resume</a>
-                                    </li>
-                                </ul>
+                                    <span>Dart & Flutter</span>
+                                    <div class="progress">
+                                        <div class="determinate">70%</div>
+                                    </div>
+
+                                    <span>HTML & CSS</span>
+                                    <div class="progress">
+                                        <div class="determinate">90%</div>
+                                    </div>
+
+                                    <span>Figma</span>
+                                    <div class="progress">
+                                        <div class="determinate">50%</div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
+                    </div>   <!-- end row -->
+                </aside><!-- end sidebar -->
 
-                        <h2 class="rit-titl"><i class="fas fa-briefcase"></i> Work Experiance</h2>
-                        <div class="work-exp">
-                            <h6>Junior Software Developer <span>2008-2011</span></h6>
-                            <i>Microsoft / United States</i>
-                            <ul>
-                                <li><i class="far fa-hand-point-right"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                                <li><i class="far fa-hand-point-right"></i> Sorem dolor sit amet, consectetur. </li>
-                                <li><i class="far fa-hand-point-right"></i> Porem ipsum sit amet, consectetur adipiscing </li>
-                            </ul>
+                <!-- =========================================
+                   Work experiences
+                ==========================================-->
+
+                <section class="col s12 m12 l8 section">
+                    <div class="row">
+                        <div class="section-wrapper z-depth-1">                            
+                            <div class="section-icon col s12 m12 l2">
+                                <i class="fa fa-suitcase"></i>
+                            </div>
+                            <div class="custom-content col s12 m12 l10 wow fadeIn a1" data-wow-delay="0.1s">
+                                <h2>Work Experience</h2>
+
+                                <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.2s">
+                                    <h3>Back End Developer <span>@Erbaver</span></h3>
+                                    <span>May 2019 - PERSENT </span>
+                                    <p>Building and deploying server side apps(REST APIs and Web sites) for clients with ASP.NET core and C#. </p>
+                                </div>
+                                <div class="custom-content-wrapper wow fadeIn a3" data-wow-delay="0.3s">
+                                    <h3>Ambassabor <span>@DotVVM</span></h3>
+                                    <span>JAN 2020 - PERSENT </span>
+                                    <p>Support and spreading the dotVVM design pattern and promoting the community. </p>
+                                </div>
+                                <div class="custom-content-wrapper wow fadeIn a4" data-wow-delay="0.4s">
+                                    <h3>Full Stack Developer <span>@Ovid Inquire</span></h3>
+                                    <span>DEC 2020 - PRESENT </span>
+                                    <p>Building and deployment of Ovid communication platform. </p>
+                                </div>
+                            </div>                            
                         </div>
-                        <div class="work-exp">
-                            <h6>Junior Software Developer <span>2008-2011</span></h6>
-                            <i>Microsoft / United States</i>
-                            <ul>
-                                <li><i class="far fa-hand-point-right"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+
+                        <!-- ========================================
+                         Education 
+                        ==========================================-->
+
+                        <div class="section-wrapper z-depth-1">
+                            <div class="section-icon col s12 m12 l2">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="custom-content col s12 m12 l10 wow fadeIn a1" data-wow-delay="0.1s" >
+                                <h2>Education </h2>
                                 
-                                <li><i class="far fa-hand-point-right"></i> Sed cursus augue risus, ac semper est consectetur vitae </li>
-                            </ul>
-                        </div>
-                        <div class="work-exp">
-                            <h6>Junior Software Developer <span>2008-2011</span></h6>
-                            <i>Microsoft / United States</i>
-                            <ul>
-                                <li><i class="far fa-hand-point-right"></i> Praesent consequat metus sit amet rhoncus luctus.
-
-                                </li>
-                                <li><i class="far fa-hand-point-right"></i> Lorem ipsum dolor sit amet, consectetur. </li>
+                                <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.2s" >
+                                    <h3>A-Level Certificate <span>@Wellspring University</span></h3>
+                                    <span>SEP 2018 - SEP SEP 2019 </span>
+                                    <p>Recived my JUPEB certificate through Wellspring University, Edo State, Nigeria . </p>
+                                </div>
+                                <div class="custom-content-wrapper wow fadeIn a3" data-wow-delay="0.3s" >
+                                    <h3>In View BSC Computer Science <span>@Lorem</span></h3>
+                                    <span>SEP 2019 - DEC 2022 </span>
+                                    <p>Currently Studing Computer Science in Wellspring University, Edo State, Nigeria . </p>
+                                </div>
                                 
-                            </ul>
+                            </div>
                         </div>
 
-                        <h2 class="rit-titl"><i class="fas fa-graduation-cap"></i> Education</h2>
-                        <div class="education">
-                            <ul class="row no-margin">
-                                <li class="col-md-6"><span>2018-2019</span> <br>
-                                    A Level Certificate - Wellspring University</li>
-                                <li class="col-md-6"><span>2019-2021</span> <br>
-                                    In View B.S.C. - Wellspring University</li>
-                               
-                            </ul>
+                        <!-- ========================================
+                              Intertests 
+                        ==========================================-->
+
+                        <div class="section-wrapper z-depth-1">                           
+                            <div class="section-icon col s12 m12 l2">
+                                <i class="fa fa-plane"></i>
+                            </div>
+                            <div class="interests col s12 m12 l10 wow fadeIn" data-wow-delay="0.1s"> 
+                                <h2>Interestes </h2>
+                                <ul> <!-- interetsr icon start -->
+                                    <li><i class="fa fa-camera-retro tooltipped" data-position="top" data-delay="50" data-tooltip="Photography"></i></li>
+                                    <li><i class="fa fa-glass tooltipped" data-position="top" data-delay="50" data-tooltip="Drinking"></i></li>
+                                    <li><i class="fa fa-headphones tooltipped" data-position="top" data-delay="50" data-tooltip="Music"></i></li>
+                                    <li><i class="fa fa-comments tooltipped" data-position="top" data-delay="50" data-tooltip="Chatting"></i></li>
+                                    <li><i class="fa fa-coffee tooltipped" data-position="top" data-delay="50" data-tooltip="Coffee"></i></li>
+                                </ul> <!-- interetsr icon end -->
+                            </div>                          
                         </div>
+                        <div class="section-wrapper z-depth-1">                            
+                            <div class="section-icon col s12 m12 l2">
+                                <i class="fa fa-paper-plane-o"></i>
+                            </div>
+                            <div class="col s12 m12 l10 wow fadeIn a1" data-wow-delay="0.1s">
 
-                        <h2 class="rit-titl"><i class="fas fa-users-cog"></i> Skills</h2>
-                        <div class="profess-cover row no-margin">
-                            <div class="col-md-6">
-                                <div class=" prog-row row">
-                                    <div class="col-sm-6">
-                                        DotNet & C#
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row prog-row">
-                                    <div class="col-sm-6">
-                                        Laravel & PHP
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="row prog-row">
-                                    <div class="col-sm-6">
-                                        Web Design
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row prog-row">
-                                    <div class="col-sm-6">
-                                        Dart & Flutter
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                           </div>
-                                    <div>
-                                    <h2 class="rit-titl"><i class="fas fa-users-cog"></i> Contact Me</h2>
-                                              <form action="" method="post"><br><br>
-                                                <input name="name"  class="form-control m-0" placeholder="Company/Individual Name" type="text" required/><br><br>
-                                                    <input name="email"   class="form-control m-0" placeholder="E-mail" type="text" email/><br><br>
-                                                <textarea  placeholder="Messages"  class="form-control m-0" name="message" required></textarea><br><br>
-                                                <input name="submit" value="submit" type="submit" class="btn btn-secondary btn-lg btn-block"/>
-                                             </form>                                       
+                                 <!--=======================================
+                         Contact
+                        ==========================================-->
                                 
+                                <h2>Contact</h2>                                
+                                <div class="contact-form" id="contact">   
+                                    <div class="row">                                   
+                                        <form role="form" id="contactForm" action="" method="POST" data-toggle="validator">
+                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                            <div class="input-field col s12">
+                                                <label for="name" class="h4">Name *</label>
+                                                <input type="text" class="form-control validate" name="name" id="name" required data-error="NEW ERROR MESSAGE">
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label for="email" class="h4">Email *</label>
+                                                <input type="email" class="form-control validate" name="email" id="email"  email>                
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label for="email" class="h4">Subject *</label>
+                                                <input type="text" class="form-control validate" name="subject" id="name" required>                
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label for="message" class="h4 ">Message *</label>
+                                                <textarea name="message" id="message" class="form-control materialize-textarea validate" required></textarea>           
+                                            </div>
+                                            <button type="submit" id="form-submit" class="btn btn-success">Submit</button>
+                                            <div class="clearfix"></div>                                
+                                        </form>                                     
+                                    </div> 
+                                </div>
+                            </div>                            
+                         </div>
                         
+                        <!-- =======================================
+                          portfolio Website
+                        ==========================================-->
+
+                        <div class="section-wrapper z-depth-1 wow fadeIn" data-wow-delay="0.1s">                            
+                            <div class="col s12 m12 l10 website right" >
+                                <div class="row">
+                                    <div class="col s12 m12 l6">
+                                       <span><a href="#">www.richardnwonah.herokuapp.com</a></span>
+                                    </div>
+                                    <div class="col col s12 m12 l6">
+                                        <span><a href="#">www.dribble.com/rtralrayhan</a></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </div><!-- end row -->
+                </section><!-- end section -->
+            </div> <!-- end row -->
+        </div>  <!-- end container -->
+        
+ <!--=====================
+                JavaScript
+        ===================== -->
+        <!-- Jquery core js-->
+        <script src="assets/js/jquery.min.js"></script>
+        
+        <!-- materialize js-->
+        <script src="assets/js/materialize.min.js"></script>
+        
+        <!-- wow js-->
+        <script src="assets/js/wow.min.js"></script>
+        
+        <!-- Map api -->
+        <script src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        
+        <!-- Masonry js-->
+        <script src="assets/js/masonry.pkgd.js"></script>
+
+        <script src="assets/js/validator.min.js"></script>
+        
+        <!-- Customized js -->
+        <script src="assets/js/init.js"></script>
+    
+        <!-- =========================================================
+            STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
+        ===========================================================-->
+        
+        <!-- Style switter js -->
+        <script src="assets/js/styleswitcher.js"></script>
+        
+        <div class="cv-style-switch" id="switch-style">
+            <a id="toggle-switcher" class="switch-button icon_tools"> <i class="fa fa-cogs"></i></a>
+            <div class="switched-options">                
+                <div class="config-title">
+                    Colors :
                 </div>
+                <ul class="styles">
+                    <li><a href="index-2.html#" onclick="setActiveStyleSheet('red'); return false;" title="Red">
+                    <div class="red"></div>
+                    </a></li>                    
+                    
+                    <li><a href="index-2.html#" onclick="setActiveStyleSheet('purple'); return false;" title="purple">
+                    <div class="purple"></div>
+                    </a></li>
+
+                    <li><a href="index-2.html#" onclick="setActiveStyleSheet('orange'); return false;" title="orange">
+                    <div class="orange"></div>
+                    </a></li>
+                    
+                    <li><a href="index-2.html#" onclick="setActiveStyleSheet('green'); return false;" title="green">
+                    <div class="green"></div>
+                    </a></li>
+                    
+                    <li><a href="index-2.html#" onclick="setActiveStyleSheet('lime'); return false;" title="lime">
+                    <div class="lime"></div>
+                    </a></li>
+
+                    <li class="p">
+                        ( NOTE: Pre Defined Colors. You can change colors very easily )
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</body>
 
+    </body>
 
-
-
-
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/script.js"></script>
+<!-- Mirrored from demo.deviserweb.com/cv/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Aug 2021 08:07:23 GMT -->
 </html>
