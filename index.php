@@ -8,13 +8,15 @@
         $email = $_POST["email"];
         $subject = $_POST["subject"];
         $message = $_POST["message"];
+        $alert = "Message submission successfull";
 
         
     $sql = "INSERT INTO contact(name, subject, email, message) VALUES ('$name', '$subject', '$email', '$message')";
 
     $conn->query($sql);
 
-        echo "<div id='messageBox'>Message submission successfull</div>";
+
+        echo "alert($alert)";
     }
 ?>
 
@@ -361,7 +363,7 @@
                                                 <label for="message" class="h4 ">Message *</label>
                                                 <textarea name="message" id="message" class="form-control materialize-textarea validate" required></textarea>           
                                             </div>
-                                            <button type="submit" id="form-submit" class="btn btn-success">Submit</button>
+                                            <input type="submit" id="form-submit" name="submit" id="submit" class="btn btn-success" value="submit">
                                             <div class="clearfix"></div>                                
                                         </form>                                     
                                     </div> 
