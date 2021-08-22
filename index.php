@@ -1,23 +1,22 @@
 <?php
-
+  
     require "includes/connection.inc.php";
 
     if(isset($_POST["submit"]))
     {
+        
+
         $name = $_POST["name"];
         $email = $_POST["email"];
         $subject = $_POST["subject"];
         $message = $_POST["message"];
-        $alert = "Message submission successfull";
 
         
     $sql = "INSERT INTO contact(name, subject, email, message) VALUES ('$name', '$subject', '$email', '$message')";
 
     $conn->query($sql);
-    echo $conn->error;
-
-
-        echo "alert($alert)";
+ 
+        echo "<script>alert('Message submission successfull')</script>";
     }
 ?>
 
@@ -346,7 +345,7 @@
                                 <h2>Contact</h2>                                
                                 <div class="contact-form" id="contact">   
                                     <div class="row">                                   
-                                        <form role="form" id="contactForm" action="" method="POST" data-toggle="validator">
+                                        <form role="form"  action="" method="POST">
                                             <div id="msgSubmit" class="h3 text-center hidden"></div>
                                             <div class="input-field col s12">
                                                 <label for="name" class="h4">Name *</label>
@@ -364,7 +363,7 @@
                                                 <label for="message" class="h4 ">Message *</label>
                                                 <textarea name="message" id="message" class="form-control materialize-textarea validate" required></textarea>           
                                             </div>
-                                            <input type="submit" id="form-submit" name="submit" id="submit" class="btn btn-success" value="submit">
+                                            <input  name="submit" type="submit" id="form-submit"id="submit" class="btn btn-success" value="submit">
                                             <div class="clearfix"></div>                                
                                         </form>                                     
                                     </div> 
