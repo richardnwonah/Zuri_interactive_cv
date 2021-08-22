@@ -14,6 +14,7 @@
     $sql = "INSERT INTO contact(name, subject, email, message) VALUES ('$name', '$subject', '$email', '$message')";
 
     $conn->query($sql);
+    echo $conn->error;
 
 
         echo "alert($alert)";
