@@ -226,7 +226,7 @@
                                         <div class="determinate"> 95%</div>
                                     </div>
                                     
-                                    <span>Javescript & Jquery</span>
+                                    <span>Go Lang</span>
                                     <div class="progress">
                                         <div class="determinate">90%</div>
                                     </div>
@@ -245,7 +245,10 @@
                                     <div class="progress">
                                         <div class="determinate">90%</div>
                                     </div>
-
+                                    <span> Javescript & Jquery</span>
+                                    <div class="progress">
+                                        <div class="determinate">50%</div>
+                                    </div>
                                     <span>Figma</span>
                                     <div class="progress">
                                         <div class="determinate">50%</div>
